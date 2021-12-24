@@ -49,9 +49,9 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	libqt5svg5-dev \
 	libqt5websockets5-dev \
 	libqt5webview5-dev \
-	mauikit \
-	mauikit-accounts \
-	mauikit-filebrowsing \
+	mauikit-git \
+	mauikit-accounts-git \
+	mauikit-filebrowsing-git \
 	pkg-kde-tools \
 	taglib \
 	qtbase5-dev \
