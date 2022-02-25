@@ -65,7 +65,7 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --only-upgrade \
 
 ### Clone repo.
 
-git clone --single-branch --branch master https://invent.kde.org/maui/vvave.git
+git clone --single-branch --branch v2.1 https://invent.kde.org/maui/vvave.git
 
 rm -rf vvave/{android_files,macos_files,windows_files,LICENSE,COPYING,README.md}
 
