@@ -58,14 +58,18 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	qtdeclarative5-dev \
 	qtmultimedia5-dev \
 	qtquickcontrols2-5-dev \
-	qtwebengine5-dev
+	qtwebengine5-dev \
+	libwayland-dev \
+	qtwayland5 \
+	qtwayland5-dev-tools \
+	qtwayland5-private-dev
 
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --only-upgrade \
 	extra-cmake-modules
 
 ### Clone repo.
 
-git clone --single-branch --branch v2.1 https://invent.kde.org/maui/vvave.git
+git clone --single-branch --branch master https://invent.kde.org/maui/vvave.git
 
 rm -rf vvave/{android_files,macos_files,windows_files,LICENSE,COPYING,README.md}
 
@@ -104,7 +108,7 @@ checkinstall -D -y \
 	--install=no \
 	--fstrans=yes \
 	--pkgname=vvave-git \
-	--pkgversion=2.1.1+git+2 \
+	--pkgversion=2.1.2+git+1 \
 	--pkgarch=amd64 \
 	--pkgrelease="1" \
 	--pkglicense=LGPL-3 \
@@ -113,7 +117,7 @@ checkinstall -D -y \
 	--pakdir=../.. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=vvave \
-	--requires="libc6,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5dbus5,libqt5gui5,libqt5multimedia5,libqt5network5,libqt5qml5,libqt5quick5,libqt5sql5,libqt5widgets5,libqt5xml5,libstdc++6,mauikit-git \(\>= 2.1.1+git+1\),mauikit-accounts-git \(\>= 2.1.1+git+1\),mauikit-filebrowsing-git \(\>= 2.1.1+git+1\),qml-module-qt-labs-platform,qml-module-qtwebview,taglib" \
+	--requires="libc6,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5dbus5,libqt5gui5,libqt5multimedia5,libqt5network5,libqt5qml5,libqt5quick5,libqt5sql5,libqt5widgets5,libqt5xml5,libstdc++6,mauikit-git \(\>= 2.1.2+git+1\),mauikit-accounts-git \(\>= 2.1.2+git+1\),mauikit-filebrowsing-git \(\>= 2.1.2+git+1\),qml-module-qt-labs-platform,qml-module-qtwebview,taglib" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
