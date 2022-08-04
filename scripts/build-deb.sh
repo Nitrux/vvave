@@ -23,7 +23,9 @@ DEBIAN_FRONTEND=noninteractive apt -qq update
 
 DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	mauikit-git \
-	mauikit-filebrowsing-git
+	mauikit-accounts \
+	mauikit-filebrowsing-git \
+	taglib
 
 ### Download Source
 
