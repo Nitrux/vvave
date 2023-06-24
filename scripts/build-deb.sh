@@ -71,7 +71,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=vvave \
-	--requires="libc6,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5dbus5,libqt5gui5,libqt5multimedia5,libqt5network5,libqt5qml5,libqt5quick5,libqt5sql5,libqt5widgets5,libqt5xml5,libstdc++6,mauikit-git \(\>= 2.2.2+git\),mauikit-accounts-git \(\>= 2.2.2+git\),mauikit-filebrowsing-git \(\>= 2.2.2+git\),qml-module-qt-labs-platform,qml-module-qtwebview,taglib" \
+	--requires="libc6,libgcc-s1,libkf5coreaddons5,libkf5i18n5,libqt5core5a,libqt5dbus5,libqt5gui5,libqt5multimedia5,libqt5network5,libqt5qml5,libqt5quick5,libqt5sql5,libqt5widgets5,libqt5xml5,libstdc++6,mauikit-git \(\>= 3.0.0+git\),mauikit-accounts-git \(\>= 3.0.0+git\),mauikit-filebrowsing-git \(\>= 3.0.0+git\),qml-module-qt-labs-platform,qml-module-qtwebview,taglib" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
