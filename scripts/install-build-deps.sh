@@ -32,6 +32,7 @@ $APT_COMMAND install -qy --no-install-recommends \
     libqt5websockets5-dev \
     libqt5webview5-dev \
     libwayland-dev \
+    libtag1-dev \
     lintian \
     pkg-kde-tools \
     qtbase5-dev \
