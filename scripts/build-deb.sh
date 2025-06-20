@@ -37,6 +37,8 @@ git clone --depth 1 --branch "$VVAVE_BRANCH" https://invent.kde.org/maui/vvave.g
 
 mkdir -p build && cd build
 
+HOST_MULTIARCH=$(dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 cmake \
 	-DCMAKE_INSTALL_PREFIX=/usr \
 	-DENABLE_BSYMBOLICFUNCTIONS=OFF \
