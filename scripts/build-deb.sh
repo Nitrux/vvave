@@ -82,7 +82,7 @@ checkinstall -D -y \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=vvave \
-	--requires="kio-extras,libqt6multimedia6,libqt6multimediawidgets6,libqt6spatialaudio6,libtag2,mauikit-accounts \(\>= 4.0.2\),mauikit-filebrowsing \(\>= 4.0.2\),mauikit \(\>= 4.0.2\),qml6-module-qtcore,qml6-module-qtquick-effects" \
+	--requires="kio-extras,libqt6multimedia6,libqt6multimediawidgets6,libqt6spatialaudio6,libtag2,mauikit-accounts \(\>= 4.0.1\),mauikit-filebrowsing \(\>= 4.0.2\),mauikit \(\>= 4.0.2\),qml6-module-qtcore,qml6-module-qtquick-effects" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
