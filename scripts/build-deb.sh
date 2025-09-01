@@ -32,6 +32,17 @@ set -e
 
 git clone --depth 1 --branch "$VVAVE_BRANCH" https://invent.kde.org/maui/vvave.git
 
+if ! grep -Eq 'find_package\(Qt.*REQUIRED COMPONENTS.*Qml' vvave/CMakeLists.txt; then
+  sed -i '/find_package(Qt.*REQUIRED COMPONENTS/ s/Core/& Qml/' vvave/CMakeLists.txt
+fi
+
+if grep -qE '^[[:space:]]*qt_policy\(SET QTP0004 NEW\)' vvave/CMakeLists.txt; then
+  sed -i '/^[[:space:]]*qt_policy(SET QTP0004 NEW)/c\
+if(QT_VERSION VERSION_GREATER_EQUAL "6.8.0")\
+  qt_policy(SET QTP0004 NEW)\
+endif()' vvave/CMakeLists.txt
+fi
+
 
 # --  Compile Source
 
