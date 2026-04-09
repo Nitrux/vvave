@@ -8,6 +8,7 @@
 Manage your music collection and stream it from the cloud.
 
 # Issues
+
 If you find problems with the contents of this repository please create an issue.
 
 ©2021 Nitrux Latinoamericana S.C.
