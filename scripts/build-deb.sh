@@ -30,7 +30,7 @@ set -e
 
 # -- Download Source
 
-git clone --depth 1 --branch "$VVAVE_BRANCH" https://invent.kde.org/maui/vvave.git
+git clone --depth 1 --branch "$VVAVE_BRANCH" https://github.com/Nitrux/maui-vvave.git
 
 
 # --  Compile Source
