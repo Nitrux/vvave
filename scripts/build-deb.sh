@@ -51,7 +51,7 @@ cmake \
 	-DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" \
 	-DCMAKE_VERBOSE_MAKEFILE=ON \
 	-DCMAKE_INSTALL_LIBDIR="/usr/lib/${HOST_MULTIARCH}" \
-	../vvave/
+	../maui-vvave/
 
 make -j"$(nproc)"
 
@@ -78,7 +78,7 @@ checkinstall -D -y \
 	--pkgrelease="1" \
 	--pkglicense=LGPL-3 \
 	--pkggroup=utils \
-	--pkgsource=vvave \
+	--pkgsource=maui-vvave \
 	--pakdir=. \
 	--maintainer=uri_herrera@nxos.org \
 	--provides=vvave \
